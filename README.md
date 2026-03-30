@@ -18,3 +18,45 @@ Built with **Express**, **Mongoose**, and secure environment variables using **d
 ---
 
 ## 📂 Project Structure
+
+├── controller/ # API controllers for users and courses
+├── model/ # Mongoose schemas
+├── routers/ # Express routers
+├── middleware/ # Auth and error handling middlewares
+├── uploads/ # File uploads (optional)
+├── index.js # Main entry point
+├── package.json
+├── .env # Environment variables(not committed)
+└── README.md
+
+
+
+---
+
+## 🚀 Features
+
+- **User Authentication**
+  - Signup and Login
+  - Password hashing
+  - JWT-based authentication
+
+- **Courses Management**
+  - CRUD operations (Create, Read, Update, Delete)
+  - Protected routes for authenticated users
+
+- **Error Handling**
+  - Middleware for handling 404 and server errors
+  - Consistent JSON responses
+
+- **Deployment Ready**
+  - Dynamic PORT for cloud platforms (Railway, Render)
+  - Configurable environment variables
+
+---
+
+## ⚙️ Setup
+
+1. Clone the repo:
+```bash
+git clone https://github.com/Abdalah-eslam/CRUD-Courses--Users-Login-Signin.git
+cd CRUD-Courses--Users-Login-Signin
