@@ -19,6 +19,9 @@ app.use( (req, res) => {
 app.use((err , req , res , next) =>{ 
     res.status(err.status || 500).json({status :err.statusText || JsonText.Error , message: err.message || 'something went wrong', code: err.status || 500 , data: null}); 
 })
+app.get('/', (req, res) => {
+res.send('API is running 🚀');
+});
 app.listen(port, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 })
