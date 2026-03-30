@@ -19,6 +19,6 @@ app.use( (req, res) => {
 app.use((err , req , res , next) =>{ 
     res.status(err.status || 500).json({status :err.statusText || JsonText.Error , message: err.message || 'something went wrong', code: err.status || 500 , data: null}); 
 })
-app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(process.env.PORT || port, "0.0.0.0"||hostname, () => {
+    console.log(`Server running at http://${hostname}:${process.env.PORT}/`);
 })
